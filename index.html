@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>document</title> 
+ 
+</head>
+<body>    
+<header>
+<!Encabezado - Selección logotipo 1 - todo lo que pongamos en la página debe ser nombrado con clases, con id o con los dos!> 
+        <img src="images/5cf2a554-1e7c-48f8-842a-19078df89008.jpg" alt="ImagenvadELO" class="imgvadELO" id="Img1">
+    
+<!Se abre etiqueta "nav"  para el navegador que en este caso solo tiene un hipervínculo que se llama "Contacto"!>
+    <nav>
+        <ol class="menu1">
+<!Se pone la etiqueta  "li" por que se refiere a un listado y la etiqueta "a" para que redireccione al hipervinculo!> 
+        <li><a href="">Contacto</a></li>
+        </ol>
+    </nav>
+</header>    
+<!Se cierra header se abre main!> 
+<main>   
+<!Se inserta una etiqueta "div" para hacer la division de la página y escribir un título "h3">
+    <div class="registro"> 
+        <h3>Como vas? Realiza tu registro en la plataforma...</h3>
+    </div>
+<!Aqui se hace una division para poner otro logotipo!>
+    <div class="imgvadELO1"> 
+        <img src="images/WhatsApp Image 2024-02-26 at 8.47.40 AM.jpeg" alt="ImagenvadELO" class="imgvadELO1" id="img2">
+    </div> 
+
+<div class="registro2">
+    <h3>Escribe tus datos.</h3>
+</div>
+<!Se realizó un formulario con los campos "nombre","usuario","email","contraseña a utilizar" y "verificar contraseña"
+    <form>
+        <label for="nombre" class="campos">Nombre:</label>
+        <input type="text" id="nombre" class="campo">
+
+        <label for="usuario"class="campos">Usuario:</label>
+        <input type="text" id="usuario" class="campo">
+
+        <label for="email"class="campos">Email:</label>
+        <input type="email" id="email" class="campo">
+        
+        <label for="pass"class="campos">Que contraseña vas a utilizar?</label>
+        <input type="password" id="pass" class="campo">
+        
+        <label for="pass2 "class="campos">Verifica la contraseña aca:</label>
+        <input type="password" id="pass2" class="campo">
+    </form>
+
+<!Se agrega el botón "REGISTRARME" que también permite la validación del formulario!>
+    <input type="button" value="REGISTRARME" onclick="validarCampo()" class="button">
+    
+    <p 
+    class="menu2">
+    Ya tienes tu cuenta VadELO? <a href="">Iniciar sesión</a>
+    </p>     
+  
+</main>
+<!Se menciona el documento de javascript!>
+<script src="dom.js"></script>
+</body>
+</html>
